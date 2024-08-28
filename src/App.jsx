@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Boton from './components/Boton'
+import CanvasComponent from './components/CanvasComponent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,6 +9,11 @@ function App() {
   return (
     <>
       <h1>Iniciamos</h1>
+      <CanvasComponent />
+      <br></br>
+      <Boton></Boton>
+      <Boton></Boton>
+      <Boton></Boton>
     </>
   )
 }
