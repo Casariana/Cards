@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const CanvasComponent = () => {
+const CanvasComponent = ({color, fondo }) => {
   // Crear una referencia para el canvas
   const canvasRef = useRef(null);
 
@@ -10,12 +10,12 @@ const CanvasComponent = () => {
     const context = canvas.getContext('2d');
 
     // Dibujar algo en el canvas
-    context.fillStyle = 'lightblue';
+    context.fillStyle = fondo;
     context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.fillStyle = 'red';
+    context.fillStyle = color;
     context.beginPath();
-    context.arc(150, 150, 10, 0, Math.PI * 2);
+    context.arc(150, 150, 60, 0, Math.PI * 2);
     context.fill();
   }, []); // El array vacío asegura que esto se ejecute solo una vez, después del primer render
 

@@ -9,11 +9,16 @@ function App() {
   return (
     <>
       <h1>Iniciamos</h1>
-      <CanvasComponent />
+      <CanvasComponent color="red" fondo="cyan"/>
       <br></br>
-      <Boton></Boton>
-      <Boton></Boton>
-      <Boton></Boton>
+      <Boton />
+      <Boton />
+      <Boton />
+      <Boton />
+      <Boton />
+      <Boton />
+      <br></br>
+      <CanvasComponent color="Yellow" fondo="brown"/>
     </>
   )
 }
