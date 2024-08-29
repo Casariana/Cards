@@ -17,6 +17,7 @@ function App() {
       <Boton />
       <Boton />
       <Boton />
+      <Boton />
       <br></br>
       <CanvasComponent color="Yellow" fondo="brown"/>
     </>
